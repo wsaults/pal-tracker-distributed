@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-saults.cfapps.io
-  memory: 512MB
+  - route: allocations-pal-saults.apps.pcfone.io
+  memory: 1GB
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://allocations-pal-saults.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://allocations-pal-saults.apps.pcfone.io
   services:
   - tracker-allocations-database
