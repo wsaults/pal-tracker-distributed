@@ -2,10 +2,10 @@ applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
-  - route: backlog-pal-saults.apps.pcfone.io
+  - route: backlog-pal-saults.cfapps.io
   memory: 1GB
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://backlog-pal-saults.apps.pcfone.io
+    REGISTRATION_SERVER_ENDPOINT: http://backlog-pal-saults.cfapps.io
   services:
   - tracker-backlog-database

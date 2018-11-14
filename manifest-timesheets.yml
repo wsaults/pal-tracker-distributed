@@ -6,6 +6,6 @@ applications:
   memory: 1GB
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://timesheets-pal-saults.apps.pcfone.io
+    REGISTRATION_SERVER_ENDPOINT: http://timesheets-pal-saults.cfapps.io
   services:
   - tracker-timesheets-database

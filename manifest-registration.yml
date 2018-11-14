@@ -2,7 +2,7 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-saults.apps.pcfone.io
+  - route: registration-pal-saults.cfapps.io
   memory: 1GB
   instances: 1
   services:
