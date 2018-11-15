@@ -6,6 +6,6 @@ applications:
   memory: 1GB
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://backlog-pal-saults.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-saults.cfapps.io
   services:
   - tracker-backlog-database

@@ -6,6 +6,6 @@ applications:
   memory: 1GB
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://allocations-pal-saults.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-saults.cfapps.io
   services:
   - tracker-allocations-database
