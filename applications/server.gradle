@@ -1,4 +1,11 @@
 apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+
+dependencyManagement {
+    imports {
+        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:$springCloudServicesClientLibrariesVersion"
+    }
+}
 
 dependencies {
     compile project(":components:rest-support")
@@ -17,8 +24,6 @@ dependencies {
 
 apply plugin: "io.spring.dependency-management"
 
-dependencyManagement {
-    imports {
-        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:springCloudServicesClientLibrariesVersion"
-    }
-}
+test.environment([
+        "REGISTRATION_SERVER_ENDPOINT": "http://registration-server",
+])
