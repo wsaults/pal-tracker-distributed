@@ -40,7 +40,6 @@ public class ApplicationServer {
             .put("EUREKA_CLIENT_ENABLED", "false")
             .put("RIBBON_EUREKA_ENABLED", "false")
             .put("REGISTRATION_SERVER_RIBBON_LISTOFSERVERS", "http://localhost:8883")
-            .put("REGISTRATION_SERVER_ENDPOINT", "http://registration-server")
             .build()
         );
     }
@@ -48,7 +47,6 @@ public class ApplicationServer {
     public void stop() {
         serverProcess.destroyForcibly();
     }
-
 
     public static void waitOnPorts(String... ports) throws InterruptedException {
         for (String port : ports) waitUntilServerIsUp(port);
