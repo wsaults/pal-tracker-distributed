@@ -3,7 +3,7 @@ applications:
   path: ./applications/backlog-server/build/libs/backlog-server.jar
   routes:
   - route: backlog-pal-saults.cfapps.io
-  memory: 1GB
+  memory: 1G
   instances: 1
   services:
   - tracker-backlog-database
