@@ -1,6 +1,8 @@
 applications:
 - name: tracker-backlog
   path: ./applications/backlog-server/build/libs/backlog-server.jar
+  health-check-type: http
+  health-check-http-endpoint: /health
   routes:
   - route: backlog-pal-saults.cfapps.io
   memory: 1G

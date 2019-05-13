@@ -1,6 +1,8 @@
 applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
+  health-check-type: http
+  health-check-http-endpoint: /health
   routes:
   - route: allocations-pal-saults.cfapps.io
   memory: 1G
