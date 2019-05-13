@@ -5,6 +5,8 @@ applications:
   - route: timesheets-pal-saults.cfapps.io
   memory: 1G
   instances: 1
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-timesheets-database
   - tracker-service-registry
