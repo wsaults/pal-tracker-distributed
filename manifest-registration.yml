@@ -1,8 +1,6 @@
 applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
-  health-check-type: http
-  health-check-http-endpoint: /health
   routes:
   - route: registration-pal-saults.cfapps.io
   memory: 1G

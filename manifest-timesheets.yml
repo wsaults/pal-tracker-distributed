@@ -1,8 +1,6 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
-  health-check-type: http
-  health-check-http-endpoint: /health
   routes:
   - route: timesheets-pal-saults.cfapps.io
   memory: 1G
